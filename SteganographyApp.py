@@ -136,9 +136,11 @@ def main():
     myMsg = input("Enter you message: ")
     encode(myImg, myMsg)
     myImg.close()
+    print("You image has encode")
   else: #elif user == "DE":
     yourImg = Image.open('secretImg.png')
     msg = decode(yourImg)
+    print("You have decode the message")
     print("Secret Message: ", msg)
     
 if __name__ == '__main__':
